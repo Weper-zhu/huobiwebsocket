@@ -2,7 +2,7 @@
 
 火币K线数据官方文档：https://huobiapi.github.io/docs/spot/v1/cn/#k，WebSocket版：https://huobiapi.github.io/docs/spot/v1/cn/#5ea2e0cde2-2
 
-第一种方法-POST请求：
+# 第一种方法-POST请求：
    
    启动文件：TradeKline.php
    
@@ -20,7 +20,7 @@
     
    **重要的事情**：运行这种方法最好把服务器放到外网，或者把public目录下的post.php文件部署到外网服务器代理请求火币api
     
-第二种方法-WebSocket订阅：
+# 第二种方法-WebSocket订阅：
 
    这种方法主要是把服务器当成一个WebSocket Client连接到火币的WebSocket服务器，订阅交易对的不同时间粒度的K线数据，成功之后火币服务器就会在K线数据变化的时候主动推送消息给到服务器，接收到推送之后就可以进行存储等操作，同时服务器也把接收到的推送消息再推送给连接到服务端的WebSocket Client。
    

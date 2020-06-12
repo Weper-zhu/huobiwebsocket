@@ -24,9 +24,9 @@
 
    这种方法主要是把服务器当成一个WebSocket Client连接到火币的WebSocket服务器，订阅交易对的不同时间粒度的K线数据，成功之后火币服务器就会在K线数据变化的时候主动推送消息给到服务器，接收到推送之后就可以进行存储等操作，同时服务器也把接收到的推送消息再推送给连接到服务端的WebSocket Client。
    
-   启动文件：TradeKline.php
+   启动文件：TradeKlineHuobi.php
       
-   代码文件：application/cli/controller/TradeKline.php
+   代码文件：application/cli/controller/TradeKlineHuobi.php
    
    启动和停止参考第一种方法
    
